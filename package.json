@@ -1,0 +1,32 @@
+{
+  "name": "book-box",
+  "version": "1.0.0",
+  "description": "📚Update a pinned gist to contain the status of reading books from Google Books.",
+  "main": "lib/index.js",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "pack": "ncc build",
+    "format": "prettier --write **/*.ts",
+    "format-check": "prettier --check **/*.ts",
+    "lint": "eslint src/**/*.ts",
+    "all": "npm run build && npm run format && npm run lint && npm run pack"
+  },
+  "author": "kentaro-m",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/parser": "^2.29.0",
+    "@zeit/ncc": "^0.22.1",
+    "eslint": "^6.8.0",
+    "eslint-plugin-github": "^3.4.1",
+    "prettier": "^2.0.4",
+    "ts-node": "^8.9.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "gist-box": "^0.3.1"
+  }
+}

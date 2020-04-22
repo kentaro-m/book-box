@@ -1,0 +1,9 @@
+name: 'Book Box'
+description: 'A GitHub Action that creating a dynamic pinned gist for GitHub.'
+author: 'kentaro-m'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: 'book-open'
+  color: 'yellow'
